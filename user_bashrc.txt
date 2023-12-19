@@ -1,0 +1,44 @@
+#------------- bashrc for user -------------#
+
+#alias for ".bashrc"
+alias be='nano /home/darklord/.bashrc'
+alias bc='cat ~/.bashrc'
+alias r='source ~/.bashrc'
+
+
+
+#commonly useful alias
+alias c="clear"
+alias h="history"
+alias hc="history -c"
+alias x="exit"
+alias u='sudo apt update && apt upgrade -y'
+
+
+
+#alias for Navigation
+alias desk="cd /home/darklord/Desktop"
+alias test="cd /home/darklord/Desktop/testing"
+
+
+
+#alias for ls functionality
+alias lsd="ls -F | grep '/$'"           #folder(/), executable_file (*), softlink(@) k roop mai dikhata
+alias lsda="ls -la | grep '^d'"         #directory with hidden directory
+alias lsf="ls -p | grep -v '/$'"        #show file only
+alias lsfa="ls -la | grep '^-r'"        #file with hidden files
+alias lsx="ls -F | grep '*$'"           #executable file only
+
+
+
+##alias for apache server
+alias astart='service apache2 start'
+alias astop='service apache2 stop'
+alias astatus='service apache2 status'
+alias arestart='service apache2 restart'
+
+
+
+#alias for Network
+alias ifc="ifconfig"
+alias iwc="iwconfig"
